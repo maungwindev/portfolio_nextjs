@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { SiFlutter, SiDart,SiGit,SiGithub,SiBitbucket,SiKotlin ,SiFirebase,SiSupabase ,SiAmazon ,SiNodedotjs,SiExpress,SiMongodb,SiSqlite,SiHive,SiMysql,SiPostgresql} from "react-icons/si";
+import { SiFlutter, SiDart, SiGit, SiGithub, SiBitbucket, SiKotlin, SiFirebase, SiSupabase, SiAmazon, SiNodedotjs, SiExpress, SiMongodb, SiSqlite, SiHive, SiMysql, SiPostgresql } from "react-icons/si";
 import {
   Github,
   Linkedin,
@@ -141,20 +141,20 @@ const testimonials = [
 
 const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    location: "California, USA",
-    year: "2016 - 2018",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "University of Greenwich",
+    location: "London, England",
+    year: "2019 - 2020",
     description: "Specialized in Mobile Computing and Human-Computer Interaction",
     logo: "/placeholder.svg?height=80&width=80",
     gradient: "from-red-500 to-orange-500",
   },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "MIT",
+    degree: "Degree in Computer Science",
+    institution: "KMD College",
     location: "Massachusetts, USA",
-    year: "2012 - 2016",
-    description: "Focus on Mobile Application Development and Software Architecture",
+    year: "2017 - 2019",
+    description: "Focus on Software Development and Program Management",
     logo: "/placeholder.svg?height=80&width=80",
     gradient: "from-blue-500 to-purple-500",
   },
@@ -314,7 +314,7 @@ export default function Portfolio() {
               >
                 Mobile
               </motion.span>
-              <br />
+              <motion.span>{' '}</motion.span>
               <motion.span
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -327,7 +327,7 @@ export default function Portfolio() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
+              className="text-center md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
             >
               Mobile Developer with 2+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development. Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.
             </motion.p>
@@ -338,7 +338,7 @@ export default function Portfolio() {
                 { icon: Github, href: "https://github.com/maungwindev", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/maungwin?utm_source=share&utm_campaign=share_via&utm_content=profile", label: "LinkedIn" },
                 // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-                { icon: Mail, href: "mailto:mgwin.developer.2000@gmail  .com", label: "Email" },
+                { icon: Mail, href: "mailto:mgwin.developer.2000@gmail.com", label: "Email" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
@@ -444,11 +444,12 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
-              Featured Projects
+              My Projects
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Explore my portfolio of mobile applications built with cutting-edge technologies
+              Showcasing mobile applications and website created with modern technologies
             </p>
+
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -459,23 +460,13 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{
-                  scale: 1.05,
-                  rotateY: 5,
-                  transition: { duration: 0.3 },
-                }}
-                className="group relative"
+                whileHover={{ scale: 1.05, rotateY: 5, transition: { duration: 0.3 } }}
+                className="group relative h-full"
               >
                 <Link href={`/project/${project.id}`}>
-                  <div className="relative overflow-hidden rounded-2xl glass glass-light dark:glass-dark transition-theme backdrop-transition hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-500">
-                    {/* Animated Gradient Background */}
-                    <motion.div
-                      className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-10 dark:opacity-20`}
-                      whileHover={{ opacity: 0.2 }}
-                      transition={{ duration: 0.3 }}
-                    />
+                  <div className="relative flex flex-col h-full overflow-hidden rounded-2xl glass glass-light dark:glass-dark transition-theme backdrop-transition hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-500">
 
-                    {/* Project Image */}
+                    {/* Image */}
                     <div className="relative h-48 overflow-hidden">
                       <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
                         <Image
@@ -497,35 +488,39 @@ export default function Portfolio() {
                       </motion.div>
                     </div>
 
-                    {/* Project Content */}
-                    <div className="p-6">
-                      <motion.h3
-                        whileHover={{ x: 5 }}
-                        className="text-xl font-bold mb-2 text-gray-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"
-                      >
-                        {project.title}
-                      </motion.h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{project.description}</p>
+                    {/* Content */}
+                    <div className="p-6 flex-1 flex flex-col justify-between">
+                      <div>
+                        <motion.h3
+                          whileHover={{ x: 5 }}
+                          className="text-xl font-bold mb-2 text-gray-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"
+                        >
+                          {project.title}
+                        </motion.h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                          {project.description}
+                        </p>
 
-                      {/* Tech Stack */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tech.slice(0, 3).map((tech, techIndex) => (
-                          <motion.span
-                            key={tech}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: techIndex * 0.1 }}
-                            className="px-2 py-1 text-xs rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
-                          >
-                            {tech}
-                          </motion.span>
-                        ))}
+                        {/* Tech Stack */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {project.tech.slice(0, 3).map((tech, techIndex) => (
+                            <motion.span
+                              key={tech}
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: techIndex * 0.1 }}
+                              className="px-2 py-1 text-xs rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
+                            >
+                              {tech}
+                            </motion.span>
+                          ))}
+                        </div>
                       </div>
 
-                      {/* View Project Link */}
+                      {/* View Project */}
                       <motion.div
                         whileHover={{ x: 5 }}
-                        className="flex items-center text-purple-600 dark:text-purple-400 font-medium group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors"
+                        className="flex items-center text-purple-600 dark:text-purple-400 font-medium group-hover:text-purple-700 dark:group-hover:text-purple-300 transition-colors mt-auto"
                       >
                         <span className="mr-2">View Project</span>
                         <motion.div whileHover={{ x: 3 }} transition={{ type: "spring", stiffness: 400 }}>
@@ -536,6 +531,7 @@ export default function Portfolio() {
                   </div>
                 </Link>
               </motion.div>
+
             ))}
           </div>
         </div>
@@ -558,7 +554,7 @@ export default function Portfolio() {
             </p>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="grid md:grid-cols-2 gap-8 gap-y-2 max-w-8xl mx-auto">
             {education.map((edu, index) => (
               <motion.div
                 key={edu.degree}
@@ -567,44 +563,37 @@ export default function Portfolio() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 whileHover={{ scale: 1.02, rotateY: 2 }}
-                className="glass glass-light dark:glass-dark transition-theme backdrop-transition rounded-2xl p-8 hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-300"
+                className="flex flex-col h-full glass glass-light dark:glass-dark transition-theme backdrop-transition rounded-2xl p-6 hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-300"
               >
-                <div className="flex flex-col md:flex-row gap-6">
-                  <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="flex-shrink-0">
-                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${edu.gradient} p-1`}>
-                      <div className="w-full h-full rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center">
-                        <GraduationCap className="w-10 h-10 text-gray-700 dark:text-gray-300" />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center gap-6 mb-4">
+                    <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="flex-shrink-0">
+                      <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${edu.gradient} p-1`}>
+                        <div className="w-full h-full rounded-xl bg-white dark:bg-gray-800 flex items-center justify-center">
+                          <GraduationCap className="w-10 h-10 text-gray-700 dark:text-gray-300" />
+                        </div>
                       </div>
-                    </div>
-                  </motion.div>
-
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{edu.degree}</h3>
-                        <p className="text-lg text-purple-600 dark:text-purple-400 font-semibold">{edu.institution}</p>
-                      </div>
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400"
-                      >
+                    </motion.div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{edu.degree}</h3>
+                      <p className="text-lg text-purple-600 dark:text-purple-400 font-semibold">{edu.institution}</p>
+                      <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mt-1">
                         <Calendar className="w-4 h-4" />
                         <span>{edu.year}</span>
-                      </motion.div>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <MapPin className="w-4 h-4" />
+                        <span>{edu.location}</span>
+                      </div>
                     </div>
-
-                    <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      <MapPin className="w-4 h-4" />
-                      <span>{edu.location}</span>
-                    </div>
-
-                    <p className="text-gray-600 dark:text-gray-300">{edu.description}</p>
                   </div>
+
+                  <p className="text-gray-600 dark:text-gray-300 mt-auto line-clamp-3">{edu.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
+
         </div>
       </section>
 
