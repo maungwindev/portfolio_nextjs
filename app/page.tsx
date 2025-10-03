@@ -36,55 +36,55 @@ import { useState } from "react"
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Mobile App",
-    category: "React Native",
+    title: "Roootel Mobile App",
+    category: "Flutter",
     description: "Full-featured shopping app with payment integration",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["React Native", "Redux", "Stripe", "Firebase"],
+    image: "/roootel.png?height=200&width=200",
+    tech: ["Flutter", "Bloc", "Dinger", "Firebase","Flutter Secure Storage"],
     gradient: "from-purple-400 to-pink-400",
   },
   {
     id: 2,
-    title: "Fitness Tracking App",
+    title: "Shwe Nyar Myay Mobile App",
     category: "Flutter",
     description: "Health monitoring with AI-powered insights",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/shwenyarmyay.png?height=300&width=400",
     tech: ["Flutter", "Dart", "TensorFlow", "SQLite"],
     gradient: "from-green-400 to-blue-400",
   },
   {
     id: 3,
-    title: "Social Media Platform",
-    category: "React Native",
+    title: "Yin Thway Nae Atu Mobile App",
+    category: "Flutter",
     description: "Real-time messaging and content sharing",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["React Native", "Socket.io", "MongoDB", "AWS"],
+    image: "/maymay.png?height=200&width=200",
+    tech: ["Flutter", "Socket.io", "MongoDB", "AWS"],
     gradient: "from-orange-400 to-red-400",
   },
   {
     id: 4,
-    title: "Banking Mobile App",
-    category: "Native iOS",
+    title: "Safe Delivery Mobile App",
+    category: "Flutter",
     description: "Secure financial transactions with biometric auth",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["Swift", "Core Data", "TouchID", "Keychain"],
+    image: "/safe_delivery.png?height=300&width=400",
+    tech: ["Flutter", "Core Data", "TouchID", "Keychain"],
     gradient: "from-blue-400 to-purple-400",
   },
   {
     id: 5,
-    title: "Food Delivery App",
-    category: "React Native",
+    title: "Golden Thailand Mobile App",
+    category: "Flutter",
     description: "Real-time tracking and order management",
-    image: "/placeholder.svg?height=300&width=400",
-    tech: ["React Native", "Google Maps", "PayPal", "Node.js"],
+    image: "/golden_thailand.png?height=300&width=400",
+    tech: ["Flutter", "Google Maps", "PayPal", "Node.js"],
     gradient: "from-yellow-400 to-orange-400",
   },
   {
     id: 6,
-    title: "Travel Booking App",
+    title: "Reader Paradise App",
     category: "Flutter",
     description: "Hotel and flight booking with AR features",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/reader_paradise.png?height=300&width=400",
     tech: ["Flutter", "ARCore", "Firebase", "Stripe"],
     gradient: "from-teal-400 to-green-400",
   },
@@ -109,35 +109,7 @@ const skills = [
   { name: "Performance Optimization", level: 92, icon: Zap, color: "from-yellow-500 to-amber-500" },
 ]
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Product Manager at TechCorp",
-    company: "TechCorp",
-    image: "/placeholder.svg?height=80&width=80",
-    content:
-      "Outstanding mobile developer! Delivered our e-commerce app ahead of schedule with exceptional quality. The user experience is phenomenal.",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "CTO at StartupXYZ",
-    company: "StartupXYZ",
-    image: "/placeholder.svg?height=80&width=80",
-    content:
-      "Incredible attention to detail and technical expertise. The fitness app exceeded all our expectations and has received amazing user feedback.",
-    rating: 5,
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Founder at HealthTech",
-    company: "HealthTech",
-    image: "/placeholder.svg?height=80&width=80",
-    content:
-      "Professional, reliable, and innovative. The AI-powered features implemented were beyond what we initially envisioned. Highly recommended!",
-    rating: 5,
-  },
-]
+
 
 const education = [
   {
@@ -160,68 +132,7 @@ const education = [
   },
 ]
 
-const certifications = [
-  {
-    title: "AWS Certified Solutions Architect - Professional",
-    issuer: "Amazon Web Services",
-    date: "December 2023",
-    credentialId: "AWS-PSA-12345",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://aws.amazon.com/verification",
-    skills: ["Cloud Architecture", "AWS Services", "DevOps"],
-    gradient: "from-orange-400 to-yellow-400",
-  },
-  {
-    title: "Google Professional Mobile Developer",
-    issuer: "Google",
-    date: "October 2023",
-    credentialId: "GOOGLE-MD-67890",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://google.com/verification",
-    skills: ["Android Development", "Kotlin", "Jetpack Compose"],
-    gradient: "from-blue-400 to-green-400",
-  },
-  {
-    title: "Meta React Native Certification",
-    issuer: "Meta (Facebook)",
-    date: "August 2023",
-    credentialId: "META-RN-11223",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://meta.com/verification",
-    skills: ["React Native", "JavaScript", "Mobile UI"],
-    gradient: "from-blue-500 to-indigo-500",
-  },
-  {
-    title: "Apple Certified iOS Developer",
-    issuer: "Apple Inc.",
-    date: "June 2023",
-    credentialId: "APPLE-IOS-44556",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://apple.com/verification",
-    skills: ["Swift", "SwiftUI", "iOS SDK"],
-    gradient: "from-gray-500 to-gray-700",
-  },
-  {
-    title: "Flutter Advanced Certification",
-    issuer: "Google Flutter Team",
-    date: "May 2023",
-    credentialId: "FLUTTER-ADV-78901",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://flutter.dev/verification",
-    skills: ["Flutter", "Dart", "Cross-platform"],
-    gradient: "from-cyan-400 to-blue-500",
-  },
-  {
-    title: "Certified Scrum Master (CSM)",
-    issuer: "Scrum Alliance",
-    date: "March 2023",
-    credentialId: "CSM-23456",
-    logo: "/placeholder.svg?height=60&width=60",
-    verifyUrl: "https://scrumalliance.org/verification",
-    skills: ["Agile", "Scrum", "Project Management"],
-    gradient: "from-teal-400 to-green-500",
-  },
-]
+
 
 // Animation variants
 const fadeInUp = {
@@ -245,7 +156,7 @@ const scaleOnHover = {
 
 export default function Portfolio() {
   const { scrollYProgress } = useScroll()
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
+  const y = useTransform(scrollYProgress, [0, 0], ["0%", "50%"])
   const [contactForm, setContactForm] = useState({ name: "", email: "", message: "" })
 
   const handleContactSubmit = (e: React.FormEvent) => {
@@ -268,15 +179,27 @@ export default function Portfolio() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="fixed top-0 left-0 right-0 z-50 glass glass-light dark:glass-dark transition-theme backdrop-transition"
+        className="fixed rounded-b-xl top-0 left-0 right-0 z-50 glass glass-light dark:glass-dark transition-theme backdrop-transition"
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          {/* Logo + Name */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent"
+            className="flex items-center gap-3"
           >
-            Maung Win
+            <Image
+              src="/logo.png"
+              alt="Maung Win Logo"
+              width={40}   // adjust size
+              height={40}
+              className="rounded-lg" // optional: rounded logo
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
+              Maung Win
+            </span>
           </motion.div>
+
+          {/* Right side controls */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
           </div>
@@ -284,24 +207,26 @@ export default function Portfolio() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden fade-in">
+      <section className="relative pt-32 min-h-screen flex items-center overflow-hidden fade-in">
         <div className="max-w-7xl mx-auto relative z-10">
-          <motion.div variants={staggerContainer} initial="initial" animate="animate" className="text-center mb-16">
+          <motion.div variants={staggerContainer} initial="initial" animate="animate" className="text-center mb-16 flex flex-col items-center justify-center">
             <motion.div variants={fadeInUp} className="relative inline-block mb-8">
               <motion.div
-                animate={{ rotate: 360 }}
+                animate={{ rotate: 0 }}
                 transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                 className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-400 to-blue-400 dark:from-purple-500 dark:to-blue-500 p-1 glow"
               >
-                <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
+                <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=120&width=120"
+                    src="/profile.png"   // no query params
                     alt="Profile"
                     width={120}
                     height={120}
-                    className="rounded-full"
+                    priority   // ensures it loads immediately without lazy loading
+                    className="rounded-full object-cover"
                   />
                 </div>
+
               </motion.div>
             </motion.div>
 
@@ -468,7 +393,7 @@ export default function Portfolio() {
 
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden">
-                      <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+                      <motion.div whileHover={{ scale: 0.0 }} transition={{ duration: 0.3 }}>
                         <Image
                           src={project.image || "/placeholder.svg"}
                           alt={project.title}
@@ -476,7 +401,8 @@ export default function Portfolio() {
                           className="object-cover"
                         />
                       </motion.div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -597,178 +523,13 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section className="py-20 px-6 fade-in">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
-              Certifications & Awards
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Professional certifications demonstrating expertise and commitment to continuous learning
-            </p>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={cert.title}
-                initial={{ opacity: 0, y: 30, scale: 0.9 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                whileHover={{ scale: 1.05, rotateY: 5 }}
-                className="glass glass-light dark:glass-dark transition-theme backdrop-transition rounded-2xl overflow-hidden hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-300 group"
-              >
-                {/* Certificate Header with Gradient */}
-                <div className={`h-24 bg-gradient-to-r ${cert.gradient} relative overflow-hidden`}>
-                  <motion.div
-                    className="absolute inset-0 bg-white/20"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  <div className="relative h-full flex items-center justify-center">
-                    <Award className="w-12 h-12 text-white" />
-                  </div>
-                </div>
 
-                <div className="p-6">
-                  <motion.h3
-                    whileHover={{ x: 3 }}
-                    className="text-lg font-bold mb-2 text-gray-800 dark:text-white line-clamp-2"
-                  >
-                    {cert.title}
-                  </motion.h3>
 
-                  <p className="text-purple-600 dark:text-purple-400 font-semibold mb-2">{cert.issuer}</p>
-
-                  <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                    <Calendar className="w-4 h-4" />
-                    <span>{cert.date}</span>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-500 mb-4 font-mono">
-                    <BookOpen className="w-3 h-3" />
-                    <span>ID: {cert.credentialId}</span>
-                  </div>
-
-                  {/* Skills Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {cert.skills.map((skill, skillIndex) => (
-                      <motion.span
-                        key={skill}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: index * 0.1 + skillIndex * 0.05 }}
-                        className="px-2 py-1 text-xs rounded-md bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300"
-                      >
-                        {skill}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Verify Button */}
-                  <motion.a
-                    href={cert.verifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ x: 5 }}
-                    className="flex items-center text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm"
-                  >
-                    <span className="mr-2">Verify Certificate</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 px-6 fade-in">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent">
-              Client Testimonials
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              What clients say about working with me
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                initial={{ opacity: 0, y: 30, rotateX: -10 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                whileHover={{ scale: 1.02, rotateY: 2 }}
-                className="glass glass-light dark:glass-dark transition-theme backdrop-transition rounded-2xl p-6 hover:bg-white/30 dark:hover:bg-gray-700/30 transition-all duration-300"
-              >
-                <div className="flex items-center mb-4">
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    className="w-12 h-12 rounded-full overflow-hidden mr-4"
-                  >
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-cover"
-                    />
-                  </motion.div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 dark:text-white">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</p>
-                    <p className="text-xs text-purple-600 dark:text-purple-400">{testimonial.company}</p>
-                  </div>
-                </div>
-
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: index * 0.1 + i * 0.1 }}
-                    >
-                      <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                    </motion.div>
-                  ))}
-                </div>
-
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: index * 0.2 + 0.3 }}
-                  className="text-gray-600 dark:text-gray-300 italic"
-                >
-                  "{testimonial.content}"
-                </motion.p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="py-20 px-6 fade-in">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -801,7 +562,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 dark:text-white">Email</p>
-                      <p className="text-gray-600 dark:text-gray-300">contact@example.com</p>
+                      <p className="text-gray-600 dark:text-gray-300">mgwin.developer.2000@gmail.com</p>
                     </div>
                   </motion.div>
 
@@ -811,7 +572,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 dark:text-white">Phone</p>
-                      <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
+                      <p className="text-gray-600 dark:text-gray-300">+959 785 181 355</p>
                     </div>
                   </motion.div>
 
@@ -821,7 +582,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 dark:text-white">Location</p>
-                      <p className="text-gray-600 dark:text-gray-300">San Francisco, CA</p>
+                      <p className="text-gray-600 dark:text-gray-300">Yangon, Myanmar</p>
                     </div>
                   </motion.div>
                 </div>
@@ -841,7 +602,7 @@ export default function Portfolio() {
                       type="text"
                       value={contactForm.name}
                       onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl glass glass-light dark:glass-dark transition-theme backdrop-transition border border-white/30 dark:border-gray-600/30 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400 transition-all text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      className="w-full px-4 py-3 rounded-xl glass glass-light dark:glass-dark transition-theme backdrop-transition border light:border-gray dark:border-gray-600/30 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:focus:ring-purple-400 transition-all text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                       placeholder="Your name"
                     />
                   </motion.div>
@@ -885,7 +646,7 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-white/20 dark:border-gray-700/20">
+      <footer className="py-2 px-2 border-t border-white/20 dark:border-gray-700/20">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -894,9 +655,9 @@ export default function Portfolio() {
             className="text-center"
           >
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              © 2025 Senior Mobile Developer Portfolio. All rights reserved.
+              © 2025 Maung Win Portfolio. All rights reserved.
             </p>
-            <div className="flex justify-center gap-6">
+            {/* <div className="flex justify-center gap-6">
               {[
                 { icon: Github, href: "https://github.com", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
@@ -915,7 +676,7 @@ export default function Portfolio() {
                   <social.icon className="w-5 h-5" />
                 </motion.a>
               ))}
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </footer>

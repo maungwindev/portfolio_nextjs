@@ -15,43 +15,46 @@ export function ThemeToggle() {
     setMounted(true)
   }, [])
 
+  // const handleThemeChange = () => {
+  //   setIsTransitioning(true)
+
+  //   // Add ripple effect from button
+  //   const button = document.getElementById("theme-toggle-button")
+  //   if (button) {
+  //     const rect = button.getBoundingClientRect()
+  //     const x = rect.left + rect.width / 2
+  //     const y = rect.top + rect.height / 2
+
+  //     // Create ripple overlay
+  //     const ripple = document.createElement("div")
+  //     ripple.className = "theme-ripple"
+  //     ripple.style.left = `${x}px`
+  //     ripple.style.top = `${y}px`
+  //     document.body.appendChild(ripple)
+
+  //     // Trigger animation
+  //     requestAnimationFrame(() => {
+  //       ripple.classList.add("active")
+  //     })
+
+  //     // Change theme after brief delay for visual effect
+  //     setTimeout(() => {
+  //       setTheme(theme === "light" ? "dark" : "light")
+  //     }, 120)
+
+  //     // Remove ripple after animation
+  //     setTimeout(() => {
+  //       ripple.remove()
+  //       setIsTransitioning(false)
+  //     }, 450)
+  //   } else {
+  //     setTheme(theme === "light" ? "dark" : "light")
+  //     setIsTransitioning(false)
+  //   }
+  // }
   const handleThemeChange = () => {
-    setIsTransitioning(true)
-
-    // Add ripple effect from button
-    const button = document.getElementById("theme-toggle-button")
-    if (button) {
-      const rect = button.getBoundingClientRect()
-      const x = rect.left + rect.width / 2
-      const y = rect.top + rect.height / 2
-
-      // Create ripple overlay
-      const ripple = document.createElement("div")
-      ripple.className = "theme-ripple"
-      ripple.style.left = `${x}px`
-      ripple.style.top = `${y}px`
-      document.body.appendChild(ripple)
-
-      // Trigger animation
-      requestAnimationFrame(() => {
-        ripple.classList.add("active")
-      })
-
-      // Change theme after brief delay for visual effect
-      setTimeout(() => {
-        setTheme(theme === "light" ? "dark" : "light")
-      }, 300)
-
-      // Remove ripple after animation
-      setTimeout(() => {
-        ripple.remove()
-        setIsTransitioning(false)
-      }, 800)
-    } else {
-      setTheme(theme === "light" ? "dark" : "light")
-      setIsTransitioning(false)
-    }
-  }
+  setTheme(theme === "light" ? "dark" : "light")
+}
 
   if (!mounted) {
     return null
@@ -64,8 +67,9 @@ export function ThemeToggle() {
         variant="ghost"
         size="sm"
         onClick={handleThemeChange}
-        disabled={isTransitioning}
-        className="relative backdrop-blur-md bg-white/20 dark:bg-gray-800/30 border border-white/30 dark:border-gray-600/30 hover:bg-white/30 dark:hover:bg-gray-700/40 transition-all duration-300 overflow-hidden"
+        className="relative backdrop-blur-md bg-white/20 dark:bg-gray-800/30 
+    hover:bg-white/30 dark:hover:bg-gray-700/40 
+    transition-all duration-300 overflow-hidden"
       >
         <AnimatePresence mode="wait">
           {theme === "light" ? (
@@ -74,7 +78,7 @@ export function ThemeToggle() {
               initial={{ rotate: -90, scale: 0 }}
               animate={{ rotate: 0, scale: 1 }}
               exit={{ rotate: 90, scale: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.2 }}
             >
               <Sun className="h-4 w-4 text-yellow-500" />
             </motion.div>
@@ -84,7 +88,7 @@ export function ThemeToggle() {
               initial={{ rotate: 90, scale: 0 }}
               animate={{ rotate: 0, scale: 1 }}
               exit={{ rotate: -90, scale: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.2 }}
             >
               <Moon className="h-4 w-4 text-blue-400" />
             </motion.div>
@@ -92,6 +96,7 @@ export function ThemeToggle() {
         </AnimatePresence>
         <span className="sr-only">Toggle theme</span>
       </Button>
+
     </motion.div>
   )
 }
