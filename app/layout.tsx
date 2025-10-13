@@ -8,7 +8,7 @@ import { ThemeTransition } from "@/components/theme-transition"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mobile Developer Portfolio",
+  title: "Maung Win Portfolio",
   description: "Mobile Developer with 2+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development with Node.js, Express.js, and modern databases (MongoDB, MySQL, PostgreSQL). Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.",
     generator: 'v0.app'
 }
@@ -28,4 +28,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
+}  

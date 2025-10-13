@@ -45,16 +45,16 @@ const projects = [
   },
   {
     id: 2,
-    title: "Shwe Nyar Myay Mobile App",
+    title: "Shwe Nyar Myay App",
     category: "Flutter",
-    description: "Health monitoring with AI-powered insights",
+    description: "Enjoy a smooth and secure shopping experience with our easy-to-use app, designed for your daily needs. Whether you're stocking up your kitchen or placing a quick order, we make grocery shopping simple, fast, and hassle-free.",
     image: "/shwenyarmyay.png?height=300&width=400",
     tech: ["Flutter", "Dart", "TensorFlow", "SQLite"],
     gradient: "from-green-400 to-blue-400",
   },
   {
     id: 3,
-    title: "Yin Thway Nae Atu Mobile App",
+    title: "Yin Thway Nae Atu App",
     category: "Flutter",
     description: "Real-time messaging and content sharing",
     image: "/maymay.png?height=200&width=200",
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Safe Delivery Mobile App",
+    title: "SAFE Delivery App",
     category: "Flutter",
     description: "Secure financial transactions with biometric auth",
     image: "/safe_delivery.png?height=300&width=400",
@@ -72,7 +72,7 @@ const projects = [
   },
   {
     id: 5,
-    title: "Golden Thailand Mobile App",
+    title: "Golden Thailand App",
     category: "Flutter",
     description: "Real-time tracking and order management",
     image: "/golden_thailand.png?height=300&width=400",

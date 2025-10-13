@@ -57,45 +57,198 @@ const projectDetails = {
     ],
   },
   2: {
-    title: "Fitness Tracking App",
+    title: "Shwe Nyar Myay App",
     category: "Flutter",
     description:
-      "An AI-powered fitness tracking application that monitors health metrics, provides personalized workout plans, and offers intelligent insights for better health outcomes.",
-    image: "/placeholder.svg?height=400&width=600",
-    tech: ["Flutter", "Dart", "TensorFlow Lite", "SQLite", "HealthKit", "Google Fit API"],
+      "Welcome to your all-in-one Grocery Shopping App!",
+    image: "/shwenyarmyay.png?height=400&width=600",
+    tech: ["Flutter", "Dart", "GetX", "SQLite", "Flutter Secure Storage", "Laravel"],
     gradient: "from-green-400 to-blue-400",
     duration: "8 months",
-    team: "5 developers",
+    team: "2 developers",
     rating: "4.9/5",
     overview:
-      "A comprehensive fitness tracking solution that combines AI-powered insights with intuitive user experience. The app helps users achieve their fitness goals through personalized recommendations and detailed analytics.",
+      "Enjoy a smooth and secure shopping experience with our easy-to-use app, designed for your daily needs. Whether you're stocking up your kitchen or placing a quick order, we make grocery shopping simple, fast, and hassle-free.",
     challenges: [
-      "Integrating with multiple health data sources and APIs",
-      "Implementing machine learning models for personalized recommendations",
-      "Creating accurate activity recognition algorithms",
+      "Integrating with real-time data fetching from api",
+      "Manage deliver address by making dynamic",
+      "Handling order to smooth",
       "Ensuring data privacy and security compliance",
     ],
     solutions: [
-      "Built unified health data layer supporting HealthKit, Google Fit, and manual input",
-      "Implemented TensorFlow Lite models for on-device AI processing",
-      "Used sensor fusion techniques for accurate activity detection",
-      "Implemented end-to-end encryption and HIPAA compliance measures",
+      "Implemented quick email-based authentication for instant sign-up and login",
+      "Built address management system for fast and accurate doorstep delivery",
+      "Developed seamless cart and checkout flow with multiple payment options including COD",
+      "Integrated real-time order tracking and history management under 'My Orders'",
+      "Enabled secure user account management with data privacy controls and easy account deletion",
     ],
     features: [
-      "Activity tracking with automatic detection",
-      "Heart rate monitoring and analysis",
-      "Personalized workout plans with AI recommendations",
-      "Nutrition tracking with barcode scanning",
-      "Sleep pattern analysis and insights",
-      "Social features for motivation and challenges",
-      "Integration with wearable devices",
-      "Detailed progress analytics and reports",
+      "Register using just your email and start shopping in seconds. No complex forms or phone verification needed.",
+      "Easily enter and manage your delivery address to get your orders delivered to your doorstep without delays.",
+      "Browse products, add to your cart, and proceed to checkout in just a few taps. Choose from multiple payment options, including Cash on Delivery (COD).",
+      "Your order is handled smoothly with clear confirmation, delivery info, and product details.",
+      "Access your order history and current orders from the “My Orders” page anytime.",
+      "Update your delivery address and personal info",
+      "Change your password securely",
+      "Delete your account whenever you want, directly from the app — your data, your control",
+      "Connect directly on chatbox",
     ],
     results: [
-      "100,000+ active users within 6 months",
-      "Featured in App Store's Health & Fitness category",
+      "1,000+ active users within 6 months",
+      "Featured in Play Store & App Store's Food & Drink Category",
       "92% user retention rate after 30 days",
-      "Average 15% improvement in user fitness metrics",
+    ],
+    screenshots: [
+      "/shwenyarmyay-1.png?height=600&width=300",
+      "/shwenyarmyay-2.png?height=600&width=300",
+      "/shwenyarmyay-3.png?height=600&width=300",
+      "/shwenyarmyay-4.png?height=600&width=300",
+    ],
+    links: [
+      "https://play.google.com/store/apps/details?id=com.codexmyanmar.shwenyarmyay&hl=en",
+      "https://apps.apple.com/us/app/shwe-nyar-myay/id6744032473"
+
+    ]
+  },
+  3: {
+    title: "Yin Thway Nae A Tu App",
+    category: "Flutter",
+    description:
+      "Manage your child's care with our app",
+    image: "/maymay.png?height=400&width=600",
+    tech: ["Flutter", "Dart", "GetX", "SQLite", "Flutter Secure Storage", "Laravel", "Audio", "Video Streaming"],
+    gradient: "from-green-400 to-blue-400",
+    duration: "1 year 4 months",
+    team: "3 developers",
+    rating: "4.9/5",
+    overview:
+      "Easily manage your child's care with our app. Create accounts for your children and babysitters, explore expert childcare articles and guides, enjoy a collection of stories and music for kids, and discover fun activities to bond with your little ones. ",
+    challenges: [
+      "Integrating with real-time data fetching from api for audio",
+      "Manage data for helping child",
+      "Handling streaming audio to smooth",
+      "Ensuring data privacy and security compliance",
+    ],
+    solutions: [
+      "Integrated WebSocket and REST APIs to enable reliable real-time audio data streaming",
+      "Built structured data management and caching system to support personalized child-focused content",
+      "Implemented adaptive audio buffering and compression for smooth, low-latency playback",
+      "Applied end-to-end encryption and secure storage practices to ensure data privacy and compliance",
+    ],
+    features: [
+      "Register quickly using your phone number with secure OTP verification.",
+      "Create detailed child profiles to personalize recommendations and track development.",
+      "Add and manage babysitter accounts for seamless coordination and care scheduling.",
+      "Access expert childcare articles, guides, and tips tailored to your child’s needs.",
+      "Solve daily childcare questions through an interactive Q&A section.",
+      "Listen to calming music and bedtime stories designed to help children sleep and relax.",
+      "Explore engaging learning activities and fun games for kids of all ages.",
+      "Track your child’s milestones and care history for better insights and planning.",
+      "Enjoy a smooth, user-friendly interface built for parents and caregivers alike.",
+    ],
+    results: [
+      "1,00+ active users within 4 months",
+      "Featured in Play Store & App Store's Health Category",
+      "92% user retention rate after 30 days",
+    ],
+    screenshots: [
+      "/maymay-1.png?height=600&width=300",
+      "/maymay-2.png?height=600&width=300",
+      "/maymay-3.png?height=600&width=300",
+      "/maymay-4.png?height=600&width=300",
+    ],
+    links: [
+      "https://play.google.com/store/apps/details?id=com.yinthwaynaeatu.app&hl=en",
+      "https://apps.apple.com/us/app/yin-thway-nae-a-tu/id6670179400"
+    ]
+  },
+  4: {
+    title: "SAFE Delivery App",
+    category: "Flutter",
+    description:
+      "Manage delivery service in local",
+    image: "/safe_delivery.png?height=400&width=600",
+    tech: ["Flutter", "Dart", "Bloc", "SQLite", "Shared Preference",],
+    gradient: "from-green-400 to-blue-400",
+    duration: "6 months",
+    team: "3 developers",
+    rating: "4.9/5",
+    overview:
+      "SAFE Delivery App is simple and easy to use. Send and Track. All your shipping requirements in one App.Whether you want to send a parcel, pickup cash for an e-commerce sales order, SAFE will make it.",
+    challenges: [
+      "Implemented UI with Flutter and integrated Google Maps API ",
+      "Worked on scheduling and delivery management features",
+    ],
+    solutions: [
+      "Developed responsive and dynamic UI components using Flutter’s widget-based architecture for a seamless user experience",
+      "Integrated Google Maps API to enable precise location tracking, route visualization, and real-time delivery updates",
+      "Implemented efficient scheduling logic with Firebase and local notifications to manage deliveries and reminders",
+      "Optimized backend communication using RESTful APIs and caching to ensure fast and reliable data sync between users and delivery agents",
+    ],
+    features: [
+      "Register and log in securely with role-based access for Merchant, Delivery, and Admin users.",
+      "Generate and manage unique parcel tracking IDs for every shipment.",
+      "Merchants can create, update, and monitor delivery requests in real time.",
+      "Delivery personnel can view optimized delivery routes with integrated map navigation.",
+      "Access customer contact details directly within the app for smooth communication.",
+      "Admins can monitor all deliveries, user activities, and parcel statuses from a centralized dashboard.",
+      "Real-time tracking updates with automatic status changes for pickup, transit, and delivery.",
+      "Manual override options for admin to adjust or verify parcel information when needed.",
+      "Built-in analytics and reporting tools to review delivery performance and user efficiency.",
+      "Simple, intuitive interface designed for quick access and clear data visibility.",
+    ],
+    results: [
+      "100,000+ active users within 2 years",
+      "Featured in Play Store & App Store's Business Category",
+      "92% user retention rate after 30 days",
+    ],
+    screenshots: [
+      "/safe-1.png?height=600&width=300",
+      "/safe-2.png?height=600&width=300",
+      "/safe-3.png?height=600&width=300",
+      "/safe-4.png?height=600&width=300",
+    ],
+    links: [
+      "https://play.google.com/store/apps/details?id=com.gigagates.client.safe&hl=en",
+      "https://apps.apple.com/mm/app/safe-delivery-myanmar/id6473803850"
+    ]
+  },
+  5: {
+    title: "Golden Thailand App",
+    category: "Flutter",
+    description:
+      "Manage POS system for restaurant",
+    image: "/golden_thailand.png?height=400&width=600",
+    tech: ["Flutter", "Dart", "Bloc", "SQLite", "Shared Preference",],
+    gradient: "from-green-400 to-blue-400",
+    duration: "4 months",
+    team: "5 developers",
+    rating: "4.9/5",
+    overview:
+      "GoldenThailand POS – A specialized POS system designed for buffet-style restaurants. Includes dynamic buffet pricing, customer time tracking, and integrated printing—optimized for smooth and efficient buffet management.",
+    challenges: [
+
+    ],
+    solutions: [
+
+    ],
+    features: [
+      "Manage shop tables with real-time status updates for dine-in and takeaway orders.",
+      "Add and organize products with detailed pricing, tax configuration, and inventory tracking.",
+      "Categorize items efficiently for faster browsing and checkout.",
+      "Create and manage buffet menus with flexible pricing and easy availability control.",
+      "View comprehensive sales and report history with daily, weekly, and monthly insights.",
+      "Multi-language support to make the system accessible for different regions and staff.",
+      "Track and manage business expenses directly from the integrated expense panel.",
+      "Perform fast and accurate checkout with built-in print receipt functionality.",
+      "Seamless integration with POS hardware like printers and barcode scanners.",
+      "Clean, intuitive interface optimized for both tablet and mobile use.",
+    ],
+
+    results: [
+      "0+ active users ",
+      "Featured in Local App",
+      "92% user retention rate after 30 days",
     ],
     screenshots: [
       "/placeholder.svg?height=600&width=300",
@@ -103,12 +256,58 @@ const projectDetails = {
       "/placeholder.svg?height=600&width=300",
       "/placeholder.svg?height=600&width=300",
     ],
+
+  },
+  6: {
+    title: "Reader Paradise App",
+    category: "Flutter",
+    description:
+      "Read & Listen About Popular Books",
+    image: "/reader_paradise.png?height=400&width=600",
+    tech: ["Flutter", "Dart", "MobX", "Firebase Notification", "Shared Preference", "Deep Linking"],
+    gradient: "from-green-400 to-blue-400",
+    duration: "6 months, I worked in as a freelencer",
+    team: "2 developers",
+    rating: "4.9/5",
+    overview:
+      "Reader's Paradise offers the world's best nonfiction books for learning, listening audio and applying knowledge anytime, anywhere. For a new reading experience, we introduce you to integrating innovative ideas and knowledge tailored to your needs into your busy life.",
+    challenges: [
+
+    ],
+    solutions: [
+
+    ],
+    features: [
+      "Manage shop tables with real-time status updates for dine-in and takeaway orders.",
+      "Add and organize products with detailed pricing, tax configuration, and inventory tracking.",
+      "Categorize items efficiently for faster browsing and checkout.",
+      "Create and manage buffet menus with flexible pricing and easy availability control.",
+      "View comprehensive sales and report history with daily, weekly, and monthly insights.",
+      "Multi-language support to make the system accessible for different regions and staff.",
+      "Track and manage business expenses directly from the integrated expense panel.",
+      "Perform fast and accurate checkout with built-in print receipt functionality.",
+      "Seamless integration with POS hardware like printers and barcode scanners.",
+      "Clean, intuitive interface optimized for both tablet and mobile use.",
+    ],
+
+    results: [
+      "0+ active users ",
+      "Featured in Local App",
+      "92% user retention rate after 30 days",
+    ],
+    screenshots: [
+      "/placeholder.svg?height=600&width=300",
+      "/placeholder.svg?height=600&width=300",
+      "/placeholder.svg?height=600&width=300",
+      "/placeholder.svg?height=600&width=300",
+    ],
+
   },
   // Add more project details as needed...
 }
 
 export default function ProjectDetail({ params }: { params: { id: string } }) {
-  const project = projectDetails[Number.parseInt(params.id)] || projectDetails[1]
+  const project = projectDetails[Number.parseInt(params.id)];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
@@ -159,14 +358,14 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button variant="outline">
-                    <Github className="w-4 h-4 mr-2" />
-                    View Code
-                  </Button>
+                  {project.links?.map((link, index) => (
+                    <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+                      <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        {link.includes("play.google") ? "Play Store" : "App Store"}
+                      </Button>
+                    </a>
+                  ))}
                 </div>
               </div>
 
