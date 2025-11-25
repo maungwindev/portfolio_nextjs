@@ -115,7 +115,7 @@ const education = [
   {
     degree: "Bachelor of Science in Computer Science",
     institution: "University of Greenwich",
-    location: "London, England",
+    location: "London, UK",
     year: "2019 - 2020",
     description: "Specialized in Mobile Computing and Human-Computer Interaction",
     logo: "/placeholder.svg?height=80&width=80",
@@ -124,7 +124,7 @@ const education = [
   {
     degree: "Degree in Computer Science",
     institution: "KMD College",
-    location: "Massachusetts, USA",
+    location: "Yangon, Myanmar",
     year: "2017 - 2019",
     description: "Focus on Software Development and Program Management",
     logo: "/placeholder.svg?height=80&width=80",
