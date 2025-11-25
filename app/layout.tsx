@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Maung Win Portfolio",
-  description: "Mobile Developer with 2+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development with Node.js, Express.js, and modern databases (MongoDB, MySQL, PostgreSQL). Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.",
+  description: "Mobile Developer with 3+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development with Node.js, Express.js, and modern databases (MongoDB, MySQL, PostgreSQL). Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.",
     generator: 'v0.app'
 }
 

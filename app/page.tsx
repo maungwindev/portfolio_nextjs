@@ -254,7 +254,7 @@ export default function Portfolio() {
               variants={fadeInUp}
               className="text-center md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
             >
-              Mobile Developer with 2+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development. Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.
+              Mobile Developer with 3+ years of experience building and publishing Flutter applications on the Play Store and App Store. Currently expanding into full-stack development. Passionate about creating scalable, user-friendly applications, with strong problem-solving skills and a commitment to continuous learning.
             </motion.p>
 
             {/* Social Links with Enhanced Animations */}
